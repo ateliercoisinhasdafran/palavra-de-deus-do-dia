@@ -27,10 +27,26 @@
 <div class="footer">Feito com amor por <span class="handle">Coisinhas da Fran</span><br>@ateliercoisinhasdafran</div>
 </div>
 <script>
-const data = [{"ref": "Salmo 23,1", "verse": "O Senhor é meu pastor; nada me faltará.", "msg": "Deus cuida de cada detalhe da sua vida. Mesmo quando as coisas parecem difíceis, Ele está ao seu lado, guiando e sustentando você.", "prayer": "Senhor, obrigado porque Tu és meu Pastor e cuidas de mim. Dá-me fé para confiar, paz para descansar em Ti e sabedoria para seguir Teus caminhos. Amém!"}, {"ref": "Mateus 11,28", "verse": "Venham a mim todos os que estão cansados.", "msg": "Jesus acolhe seu cansaço e oferece descanso para o coração.", "prayer": "Jesus, recebe minhas preocupações e ensina-me a descansar em Teu amor. Amém!"}, {"ref": "Filipenses 4,6-7", "verse": "Não vivam dominados pela ansiedade; apresentem tudo a Deus em oração.", "msg": "Quando a preocupação apertar, transforme o que pesa no coração em oração.", "prayer": "Senhor, entrego a Ti aquilo que não consigo controlar. Guarda meu coração com Tua paz. Amém!"}, {"ref": "Lucas 1,38", "verse": "Eis aqui a serva do Senhor.", "msg": "Maria nos ensina a confiar em Deus e dizer sim, mesmo quando não conhecemos todo o caminho.", "prayer": "Nossa Senhora, ajuda-me a confiar na vontade de Deus e a dizer meu sim com amor. Amém!"}, {"ref": "João 14,27", "verse": "Deixo-vos a paz; dou-vos a minha paz.", "msg": "A paz de Jesus permanece mesmo quando o mundo ao redor está agitado.", "prayer": "Jesus, coloca em mim a Tua paz e ajuda-me a não perder a esperança. Amém!"}, {"ref": "Salmo 46,2", "verse": "Deus é nosso refúgio e nossa força.", "msg": "Nos dias difíceis, lembre-se de que você não precisa caminhar sozinho.", "prayer": "Senhor, sê meu abrigo e minha força. Sustenta-me hoje e sempre. Amém!"}, {"ref": "Isaías 41,10", "verse": "Não temas, porque eu estou contigo.", "msg": "Deus não promete que nunca haverá dificuldades, mas promete presença e força para atravessá-las.", "prayer": "Pai, segura minha mão e dá-me coragem para continuar. Amém!"}, {"ref": "João 15,5", "verse": "Quem permanece em mim dá muito fruto.", "msg": "Quanto mais perto de Cristo, mais nossa vida pode produzir frutos de amor, bondade e esperança.", "prayer": "Jesus, permanece comigo e faz minha vida produzir frutos para o bem. Amém!"}, {"ref": "1 Coríntios 13,4-7", "verse": "O amor é paciente e bondoso.", "msg": "O amor cristão aparece em atitudes: paciência, cuidado, perdão e generosidade.", "prayer": "Senhor, ensina-me a amar com gestos concretos e um coração generoso. Amém!"}, {"ref": "Salmo 121,1-2", "verse": "De onde virá meu auxílio? Meu auxílio vem do Senhor.", "msg": "Erga o coração: sua ajuda vem de Deus, que nunca deixa de olhar por você.", "prayer": "Senhor, cuida de mim e de minha família. Que eu nunca me esqueça de onde vem meu auxílio. Amém!"}];
+const data = [
+{ref:"Salmo 23,1",verse:"O Senhor é meu pastor; nada me faltará.",msg:"Deus cuida de cada detalhe da sua vida. Confie n’Ele."},
+{ref:"Filipenses 4,13",verse:"Tudo posso naquele que me fortalece.",msg:"Quando suas forças acabarem, lembre-se: Deus continua sustentando você."},
+{ref:"Salmo 46,2",verse:"Deus é o nosso refúgio e a nossa força.",msg:"Em meio às dificuldades, corra para Deus. Nele você encontrará segurança."},
+{ref:"Jeremias 29,11",verse:"Eu é que sei que pensamentos tenho a vosso respeito, diz o Senhor.",msg:"Deus conhece o seu futuro e prepara caminhos de esperança para você."},
+{ref:"Mateus 11,28",verse:"Vinde a mim, todos vós que estais cansados.",msg:"Entregue seu cansaço a Jesus. Ele deseja aliviar o seu coração."},
+{ref:"Salmo 37,5",verse:"Entrega o teu caminho ao Senhor; confia nele.",msg:"Entregue seus planos a Deus e permita que Ele conduza seus passos."},
+{ref:"Isaías 41,10",verse:"Não temas, porque eu estou contigo.",msg:"Não tenha medo do amanhã. Deus está ao seu lado."},
+{ref:"Salmo 121,7",verse:"O Senhor te guardará de todo mal.",msg:"Que Deus proteja você e sua família hoje e sempre."},
+{ref:"João 14,27",verse:"Deixo-vos a paz, dou-vos a minha paz.",msg:"Que a paz de Jesus acalme seu coração e renove sua esperança."},
+{ref:"Salmo 23,4",verse:"Ainda que eu ande pelo vale, não temerei mal algum.",msg:"Mesmo nos momentos difíceis, Deus permanece caminhando com você."},
+{ref:"Provérbios 3,5",verse:"Confia no Senhor de todo o teu coração.",msg:"Nem sempre precisamos entender tudo. Às vezes, precisamos apenas confiar."},
+{ref:"Mateus 6,34",verse:"Não vos preocupeis com o dia de amanhã.",msg:"Viva o hoje com fé. Deus já está cuidando do amanhã."},
+{ref:"Salmo 91,11",verse:"Aos seus anjos dará ordens a teu respeito.",msg:"Que os anjos de Deus acompanhem seus passos e protejam seu caminho."},
+{ref:"Romanos 8,28",verse:"Tudo concorre para o bem daqueles que amam a Deus.",msg:"Mesmo aquilo que hoje parece difícil pode fazer parte de um propósito maior."},
+{ref:"Salmo 34,18",verse:"Perto está o Senhor dos que têm o coração quebrantado.",msg:"Se o seu coração estiver triste, converse com Deus. Ele está perto de você."}
+];
 const now = new Date(), start = new Date(now.getFullYear(),0,1);
 const day = Math.floor((now-start)/86400000);
-const x = data[day % data.length];
+const x = data[Math.floor(Math.random() * data.length)];
 document.getElementById('date').textContent = now.toLocaleDateString('pt-BR',{day:'2-digit',month:'long',year:'numeric'});
 document.getElementById('ref').textContent=x.ref;
 document.getElementById('verse').textContent='“'+x.verse+'”';
