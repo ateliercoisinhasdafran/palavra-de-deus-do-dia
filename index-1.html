@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Palavra de Deus do Dia | Coisinhas da Fran</title>
+<meta name="theme-color" content="#f3a39b">
+<style>
+:root{--rose:#e98f87;--rose2:#f8d9d3;--cream:#fffaf6;--brown:#553a31;--gold:#c8924b}
+*{box-sizing:border-box} body{margin:0;background:linear-gradient(145deg,#fffaf6,#f9e9e4);color:var(--brown);font-family:Georgia,serif}
+.wrap{max-width:720px;margin:auto;padding:22px 16px 35px}.brand{text-align:center;background:#fffdfb;border:2px solid #f0b1a9;border-radius:50%;width:190px;height:190px;margin:0 auto 18px;display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:0 8px 25px #7d4d4218}
+.brand .heart{font-size:28px}.brand h1{font-size:30px;line-height:.95;margin:7px 0;color:#4b3028}.brand p{font:700 10px Arial,sans-serif;letter-spacing:1.2px;margin:8px 0 0}
+.hero{text-align:center}.hero h2{font-size:37px;line-height:1;margin:8px 0;color:#6b4036}.hero .sub{font-size:17px;color:#9b635b}
+.date{display:inline-block;margin:17px 0;padding:10px 22px;border-radius:30px;background:#f5c5bd;color:#603d35;font-weight:bold}
+.card{background:#fffdfb;border-radius:24px;padding:25px;margin:14px 0;box-shadow:0 8px 25px #704b4014;border:1px solid #f1ddd7}
+.label{text-transform:uppercase;letter-spacing:2px;color:#d47770;font:bold 13px Arial,sans-serif;text-align:center}.ref{text-align:center;color:#b77a45;font-weight:bold;margin:9px}.verse{text-align:center;font-size:27px;line-height:1.35;margin:10px 0 5px}.msg,.prayer{font-size:18px;line-height:1.6}.prayer{background:#fff3ef;padding:16px;border-radius:18px;margin-top:18px}.icons{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;text-align:center;font-size:14px;line-height:1.35}.icons div{padding:14px 8px;border-radius:16px;background:#fff3ef}.qrbox{text-align:center;padding:22px}.qrbox .qr{width:170px;height:170px;margin:12px auto;background:#fff;border:10px solid #fff;box-shadow:0 4px 14px #0002}.qrbox .qr img{width:100%;height:100%}.footer{text-align:center;font:14px Arial,sans-serif;color:#8d6d66;padding-top:10px}.handle{font-weight:bold;color:#6d473e}
+@media(max-width:500px){.hero h2{font-size:31px}.verse{font-size:23px}.icons{grid-template-columns:1fr}}
+</style>
+</head>
+<body><div class="wrap">
+<div class="brand"><div class="heart">♡ ✨</div><h1>Coisinhas<br>da Fran</h1><p>CHAVEIROS • BOTTONS • ÍMÃS PERSONALIZADOS</p></div>
+<div class="hero"><h2>PALAVRA DE DEUS DO DIA</h2><div class="sub">♡ Um encontro com Deus, todos os dias. ♡</div><div class="date" id="date"></div></div>
+<section class="card"><div class="label">Versículo do dia</div><div class="ref" id="ref"></div><div class="verse" id="verse"></div></section>
+<section class="card"><div class="label">Mensagem para o seu coração</div><p class="msg" id="msg"></p><div class="prayer"><strong>🙏 Oração do dia</strong><br><span id="prayer"></span></div></section>
+<section class="card icons"><div>📖<br><strong>Alimente sua fé</strong><br>A Palavra fortalece.</div><div>🙏<br><strong>Fale com Deus</strong><br>A oração aproxima.</div><div>❤️<br><strong>Viva o amor</strong><br>Espalhe o bem.</div></section>
+<section class="card qrbox"><div class="label">Volte amanhã</div><p>Uma nova mensagem estará esperando por você. ❤️</p><div class="footer">Deus te abençoe hoje e sempre!</div></section>
+<div class="footer">Feito com amor por <span class="handle">Coisinhas da Fran</span><br>@ateliercoisinhasdafran</div>
+</div>
+<script>
+const data = [{"ref": "Salmo 23,1", "verse": "O Senhor é meu pastor; nada me faltará.", "msg": "Deus cuida de cada detalhe da sua vida. Mesmo quando as coisas parecem difíceis, Ele está ao seu lado, guiando e sustentando você.", "prayer": "Senhor, obrigado porque Tu és meu Pastor e cuidas de mim. Dá-me fé para confiar, paz para descansar em Ti e sabedoria para seguir Teus caminhos. Amém!"}, {"ref": "Mateus 11,28", "verse": "Venham a mim todos os que estão cansados.", "msg": "Jesus acolhe seu cansaço e oferece descanso para o coração.", "prayer": "Jesus, recebe minhas preocupações e ensina-me a descansar em Teu amor. Amém!"}, {"ref": "Filipenses 4,6-7", "verse": "Não vivam dominados pela ansiedade; apresentem tudo a Deus em oração.", "msg": "Quando a preocupação apertar, transforme o que pesa no coração em oração.", "prayer": "Senhor, entrego a Ti aquilo que não consigo controlar. Guarda meu coração com Tua paz. Amém!"}, {"ref": "Lucas 1,38", "verse": "Eis aqui a serva do Senhor.", "msg": "Maria nos ensina a confiar em Deus e dizer sim, mesmo quando não conhecemos todo o caminho.", "prayer": "Nossa Senhora, ajuda-me a confiar na vontade de Deus e a dizer meu sim com amor. Amém!"}, {"ref": "João 14,27", "verse": "Deixo-vos a paz; dou-vos a minha paz.", "msg": "A paz de Jesus permanece mesmo quando o mundo ao redor está agitado.", "prayer": "Jesus, coloca em mim a Tua paz e ajuda-me a não perder a esperança. Amém!"}, {"ref": "Salmo 46,2", "verse": "Deus é nosso refúgio e nossa força.", "msg": "Nos dias difíceis, lembre-se de que você não precisa caminhar sozinho.", "prayer": "Senhor, sê meu abrigo e minha força. Sustenta-me hoje e sempre. Amém!"}, {"ref": "Isaías 41,10", "verse": "Não temas, porque eu estou contigo.", "msg": "Deus não promete que nunca haverá dificuldades, mas promete presença e força para atravessá-las.", "prayer": "Pai, segura minha mão e dá-me coragem para continuar. Amém!"}, {"ref": "João 15,5", "verse": "Quem permanece em mim dá muito fruto.", "msg": "Quanto mais perto de Cristo, mais nossa vida pode produzir frutos de amor, bondade e esperança.", "prayer": "Jesus, permanece comigo e faz minha vida produzir frutos para o bem. Amém!"}, {"ref": "1 Coríntios 13,4-7", "verse": "O amor é paciente e bondoso.", "msg": "O amor cristão aparece em atitudes: paciência, cuidado, perdão e generosidade.", "prayer": "Senhor, ensina-me a amar com gestos concretos e um coração generoso. Amém!"}, {"ref": "Salmo 121,1-2", "verse": "De onde virá meu auxílio? Meu auxílio vem do Senhor.", "msg": "Erga o coração: sua ajuda vem de Deus, que nunca deixa de olhar por você.", "prayer": "Senhor, cuida de mim e de minha família. Que eu nunca me esqueça de onde vem meu auxílio. Amém!"}];
+const now = new Date(), start = new Date(now.getFullYear(),0,1);
+const day = Math.floor((now-start)/86400000);
+const x = data[day % data.length];
+document.getElementById('date').textContent = now.toLocaleDateString('pt-BR',{day:'2-digit',month:'long',year:'numeric'});
+document.getElementById('ref').textContent=x.ref;
+document.getElementById('verse').textContent='“'+x.verse+'”';
+document.getElementById('msg').textContent=x.msg;
+document.getElementById('prayer').textContent=x.prayer;
+</script></body></html>
